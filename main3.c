@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+//задание 3
 int main(void) {
 //для див и для мод с остатком 5
     int k = 10;
