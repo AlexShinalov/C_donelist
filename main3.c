@@ -1,16 +1,23 @@
 #include <stdio.h>
-#define _CRT_SECURE_NO_WARNINGS
-    int fib(int x)
-    {
-        if (x <= 1)   return 1;
-        else return fib(x - 1) + fib(x-2);
-    }
-int main(){
-    long long y = 10;
-    long long k = 10;
-    //scanf("%d", &k);
 
-    y = fib(k);
-    printf(y);
-    return 0;
+int main(void) {
+//для див и для мод с остатком 5
+    int k = 10;
+    scanf("%d", &k);
+    int i = 0;
+    scanf("%d", &i);
+    int z = 0;
+    int c =0;
+    int r = 0;
+    while (k-i>=0) {
+        z = k - i;
+        r = i + i;
+        k=k-i;
+        c+=1;
+    }
+    if (z==1){
+        z=5;
+    }
+    printf("div = %d\n", c);
+    printf("mod = %d\n", z);
 }
