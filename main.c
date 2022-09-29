@@ -1,4 +1,5 @@
 #include <stdio.h>
+//задание 1
 int main(){
     int k = 10;
     scanf("%d", &k);
